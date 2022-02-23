@@ -5,12 +5,22 @@ public class Node {
 
     public Node(Integer waarde){
         this.waarde = waarde;
-        left = null;
-        right = null;
     }
 
     public String toString(){
-        return "waarde is " + waarde;
+        String s= "";
+//        if (waarde == null)
+//            s="";
+
+        s+=""+waarde+"\n";
+
+        if(left != null)
+            s+="Left:"+left+"";
+
+        if(right != null)
+            s+="Right:"+right+"";
+
+        return s;
     }
 
 }

@@ -4,10 +4,19 @@ public class Main {
 	// write your code here
         Tree boom = new Tree();
 
-        boom.voegToe(new Node(2), 2);
+        boom.insert(8);
+        boom.insert(3);
+        boom.insert(10);
+        boom.insert(1);
+        boom.insert(5);
+        boom.insert(11);
+        boom.insert(9);
+//        boom.toStringCall();
+        System.out.println(boom.toString(boom.root));
+//        boom.printTree(boom.root);
 
+//        boom.zoek(3);
 
-        System.out.println(boom);
 
     }
 }
